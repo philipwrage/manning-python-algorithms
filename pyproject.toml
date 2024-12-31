@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manning-python-algorithms"
+description = "Implement Manning liveProject for Python algorithms"
+version = "0.0.1"
+requires-python = ">= 3.9"
+dependencies = [
+    "pytest"
+]
+authors = [
+    { name = "Philip Wrage" }
+]
+readme = "README.md"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "--import-mode=append -rf --color=yes -v"
+testpaths = ["tests"]
